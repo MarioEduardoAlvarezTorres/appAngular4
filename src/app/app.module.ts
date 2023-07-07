@@ -10,8 +10,11 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { ROUTES } from './app.routes';
 import { SpotifyService } from './services/spotify.service';
+//RUTAS
+import { ROUTES } from './app.routes';
+//PIPES
+import { NoimagePipe } from './pipes/noimage.pipe';
 
 //ROUTES
 
@@ -22,6 +25,7 @@ import { SpotifyService } from './services/spotify.service';
     SearchComponent,
     ArtistComponent,
     NavbarComponent,
+    NoimagePipe,
   ],
   imports: [
     BrowserModule,

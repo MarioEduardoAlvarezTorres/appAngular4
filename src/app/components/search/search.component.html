@@ -13,7 +13,7 @@
 <div class="row row-cols-1 row-cols-md-4 g-4 m-5">
   <div *ngFor="let search of searchs" class="col">
     <div class="card">
-      <img [src]="search.images[0].url" class="card-img-top" alt="..." />
+      <img [src]="search.images | noimage" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">{{ search.name }}</h5>
         <p class="card-text">

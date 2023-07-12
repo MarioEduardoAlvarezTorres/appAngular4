@@ -22,14 +22,12 @@ export class ArtistComponent {
 
   getArtist(id: string) {
     this.spotifyService.getArtist(id).subscribe((artist) => {
-      console.log(artist);
       this.artist = artist;
     });
   }
 
   getTopTracks(id: string) {
     this.spotifyService.getTopTracks(id).subscribe((topTracks) => {
-      console.log(topTracks);
       this.topTracks = topTracks;
     });
   }

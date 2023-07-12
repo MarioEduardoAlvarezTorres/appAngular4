@@ -15,6 +15,8 @@ import { SpotifyService } from './services/spotify.service';
 import { ROUTES } from './app.routes';
 //PIPES
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { CardsComponent } from './components/cards/cards.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 //ROUTES
 
@@ -26,6 +28,8 @@ import { NoimagePipe } from './pipes/noimage.pipe';
     ArtistComponent,
     NavbarComponent,
     NoimagePipe,
+    CardsComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,

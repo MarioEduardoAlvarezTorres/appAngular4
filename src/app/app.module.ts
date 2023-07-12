@@ -17,6 +17,8 @@ import { ROUTES } from './app.routes';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { CardsComponent } from './components/cards/cards.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 //ROUTES
 
@@ -30,11 +32,13 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NoimagePipe,
     CardsComponent,
     LoadingComponent,
+    DomseguroPipe,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
+    FontAwesomeModule,
   ],
   providers: [SpotifyService],
   bootstrap: [AppComponent],
